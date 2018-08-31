@@ -1,9 +1,9 @@
-﻿#CODEFORCES PROBLEM PARSER
+﻿# CODEFORCES PROBLEM PARSER
 
 This repo contains two scripts(get_problem.py & run.py) which are complemenatry to each other. "get_problem.py" fetches the sample test of the problem and puts them into two separate input and output text files. "run.py" run yours executable code on all the sample testcases and consists of provision to check whether your output is correct or not.
 
 
-##USAGE
+## USAGE
 
 To get the sample test cases of the problem you need to know the problem no(generally the contest no), which is given in the problemset(can also be found in the url), for example if the problem no is 255 A then run the command:
 	
