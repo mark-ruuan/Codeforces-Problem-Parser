@@ -3,6 +3,7 @@ from sys import argv
 from subprocess import run, PIPE
 from time import time
 
+# This denotes the end of a test case, mandatory after every test case
 BREAK = "END OF TESTCASE\n"
 
 check = len(argv) > 1 and int(argv[1])
@@ -19,6 +20,8 @@ for i in range(1, num_cases + 1):
 		case_input += line
 		line = inp.readline()
 	start_time = time()
+
+#runs ./a.out in ubuntu can be changed to a.exe
 	output = run(["./a.out"],
 		input=case_input.encode('utf-8'),stdout=PIPE).stdout.decode('utf-8')
 	time_taken = time() - start_time

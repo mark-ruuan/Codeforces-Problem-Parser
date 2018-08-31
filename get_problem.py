@@ -3,6 +3,7 @@ from urllib.request import urlopen
 from sys import argv
 from html.parser import HTMLParser
 
+# This denotes the end of a test case, mandatory after every test case
 BREAK = "END OF TESTCASE\n"
 
 class problem_parser(HTMLParser):
@@ -31,9 +32,15 @@ class problem_parser(HTMLParser):
 	def handle_data(self, data):
 		if self.reading:
 			self.buffer += data + '\n'
-problem_no = argv[1]
-problem_letter = argv[2]
+			
 
+#This is contest no given in the url of the problem
+problem_no = argv[1]  
+#This is the problem no (A, B, C, D, E..)
+problem_letter = argv[2]    
+
+
+#This is the URL of the problem
 url = 'https://codeforces.com/problemset/problem/' + problem_no + '/' + problem_letter
 problem = urlopen(url)
 flag = 0
