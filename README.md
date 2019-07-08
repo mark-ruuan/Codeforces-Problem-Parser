@@ -19,7 +19,7 @@ After compiling your code an executable file "./a.out" should be generated. Afte
 	./run.py
 ```
 
-if u want to check the answers then run the following command:
+if u want to check the answers for particular testcase then run the following command:
 	
 ```
 	./run.py 1
